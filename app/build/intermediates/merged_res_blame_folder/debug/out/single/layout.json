@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\GitHub\\Android-Chaeyoung\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_second.xml",
+        "source": "D:\\GitHub\\Android-Chaeyoung\\app\\src\\main\\res\\layout\\activity_second.xml"
+    },
+    {
+        "merged": "D:\\GitHub\\Android-Chaeyoung\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "D:\\GitHub\\Android-Chaeyoung\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\GitHub\\Android-Chaeyoung\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_follower.xml",
+        "source": "D:\\GitHub\\Android-Chaeyoung\\app\\src\\main\\res\\layout\\fragment_follower.xml"
+    },
+    {
+        "merged": "D:\\GitHub\\Android-Chaeyoung\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_repository.xml",
+        "source": "D:\\GitHub\\Android-Chaeyoung\\app\\src\\main\\res\\layout\\fragment_repository.xml"
+    },
+    {
+        "merged": "D:\\GitHub\\Android-Chaeyoung\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_signin.xml",
+        "source": "D:\\GitHub\\Android-Chaeyoung\\app\\src\\main\\res\\layout\\activity_signin.xml"
+    },
+    {
+        "merged": "D:\\GitHub\\Android-Chaeyoung\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\follower_list.xml",
+        "source": "D:\\GitHub\\Android-Chaeyoung\\app\\src\\main\\res\\layout\\follower_list.xml"
+    },
+    {
+        "merged": "D:\\GitHub\\Android-Chaeyoung\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\repository_list.xml",
+        "source": "D:\\GitHub\\Android-Chaeyoung\\app\\src\\main\\res\\layout\\repository_list.xml"
+    }
+]

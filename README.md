@@ -26,3 +26,22 @@
 
 
 
+### week2
+
+- 필수 과제
+
+1. 자기소개 페이지에서 FollowerRecyclerView, RepositoryRecyclerView 만들기
+2. 하나의 RecyclerView는 Grid Layout으로 만들기
+
+
+
+자기소개 페이지
+
+- FollowerRecyclerView
+
+
+
+
+
+- RepositoryRecyclerView
+
