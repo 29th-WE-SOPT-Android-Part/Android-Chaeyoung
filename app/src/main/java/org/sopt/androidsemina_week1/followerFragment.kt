@@ -44,13 +44,10 @@ class followerFragment : Fragment() {
         followerAdapter.userList.addAll(
             listOf(
                 UserData("심채영", "29기"),
-                UserData("심채영1", "29기"),
-                UserData("심채영2", "29기"),
-                UserData("심채영3", "29기"),
-                UserData("심채영4", "29기"),
-                UserData("심채영5", "29기"),
-                UserData("심채영6", "29기"),
-                UserData("심채영7", "29기"),
+                UserData("김철수", "1기"),
+                UserData("신짱구", "2기"),
+                UserData("신짱아", "23기"),
+                UserData("유리", "24기")
             )
         )
 

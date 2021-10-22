@@ -42,9 +42,9 @@ class RepositoryFragment : Fragment() {
         repositoryAdapter.repoList.addAll(
             listOf(
                 RepoData("레포지토리1", "레포지토리설명입니다~~"),
-                RepoData("채영1", "29기"),
-                RepoData("채영2", "29기"),
-                RepoData("채영3", "29기")
+                RepoData("레포지토리2", "레포지토리설명입니다~~"),
+                RepoData("레포지토리3", "레포지토리설명입니다~~"),
+                RepoData("레포지토리4", "레포지토리설명입니다~~")
             )
         )
         repositoryAdapter.notifyDataSetChanged()

@@ -28,14 +28,14 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setRepoFragment() {
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.recycler_repository, RepositoryFragment())
+        transaction.replace(R.id.container_main, RepositoryFragment())
         transaction.commit()
     }
 
     private fun setFollowerFragment(){
 
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.recycler_follow, followerFragment())
+        transaction.replace(R.id.container_main, followerFragment())
         transaction.commit()
     }
 

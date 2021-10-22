@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -20,6 +21,9 @@ import org.sopt.androidsemina_week1.R;
 public final class ActivitySecondBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final FragmentContainerView containerMain;
 
   @NonNull
   public final Button followerBtn;
@@ -54,12 +58,14 @@ public final class ActivitySecondBinding implements ViewBinding {
   @NonNull
   public final TextView textView9;
 
-  private ActivitySecondBinding(@NonNull ConstraintLayout rootView, @NonNull Button followerBtn,
+  private ActivitySecondBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FragmentContainerView containerMain, @NonNull Button followerBtn,
       @NonNull ImageView imageView, @NonNull Button repositBtn, @NonNull TextView textView,
       @NonNull TextView textView10, @NonNull TextView textView11, @NonNull TextView textView12,
       @NonNull TextView textView2, @NonNull TextView textView7, @NonNull TextView textView8,
       @NonNull TextView textView9) {
     this.rootView = rootView;
+    this.containerMain = containerMain;
     this.followerBtn = followerBtn;
     this.imageView = imageView;
     this.repositBtn = repositBtn;
@@ -100,6 +106,12 @@ public final class ActivitySecondBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.container_main;
+      FragmentContainerView containerMain = ViewBindings.findChildViewById(rootView, id);
+      if (containerMain == null) {
+        break missingId;
+      }
+
       id = R.id.follower_btn;
       Button followerBtn = ViewBindings.findChildViewById(rootView, id);
       if (followerBtn == null) {
@@ -166,9 +178,9 @@ public final class ActivitySecondBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySecondBinding((ConstraintLayout) rootView, followerBtn, imageView,
-          repositBtn, textView, textView10, textView11, textView12, textView2, textView7, textView8,
-          textView9);
+      return new ActivitySecondBinding((ConstraintLayout) rootView, containerMain, followerBtn,
+          imageView, repositBtn, textView, textView10, textView11, textView12, textView2, textView7,
+          textView8, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

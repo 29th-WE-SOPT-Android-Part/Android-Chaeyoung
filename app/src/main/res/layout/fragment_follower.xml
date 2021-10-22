@@ -10,10 +10,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_follow"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="12dp"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:itemCount="3"
         tools:listitem="@layout/follower_list"
         app:spanCount="3"
@@ -22,9 +22,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="506dp"
-        android:text="팔로워 프래그먼트" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
