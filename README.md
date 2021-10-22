@@ -37,11 +37,14 @@
 
 자기소개 페이지
 
-- FollowerRecyclerView
+
+|이미지|설명|
+|:-:|-----|
+|<img src="https://user-images.githubusercontent.com/62435316/138473996-aba90e18-3c8f-428a-af5e-159ef78c8289.jpg"  width="50%" height="50%"/>|- FollowerRecyclerView : LinearLayout으로 뷰|
+|<img src="https://user-images.githubusercontent.com/62435316/138474041-6fefb820-4aed-4e88-8159-008303602d4f.jpg"  width="50%" height="50%"/>|- RepositoryRecyclerView : GridLayout으로 뷰|
 
 
 
 
 
-- RepositoryRecyclerView
 
