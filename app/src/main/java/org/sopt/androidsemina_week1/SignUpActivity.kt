@@ -18,9 +18,9 @@ class SignUpActivity : AppCompatActivity() {
         val homeIntent = Intent(this, SignUpActivity::class.java)
 
         binding.signUpbtn.setOnClickListener {
-            val id_str = binding.editIdText.getText().toString();
-            val name_str = binding.editNameText.getText().toString();
-            val pw_str = binding.editTextSignupPw.getText().toString();
+            val id_str = binding.idEt.getText().toString();
+            val name_str = binding.nameEt.getText().toString();
+            val pw_str = binding.pwEt.getText().toString();
             if(!name_str.isEmpty() && !id_str.isEmpty() && !pw_str.isEmpty()){
                 Toast.makeText(this, "회원가입 성공", Toast.LENGTH_SHORT).show();
                 finish();

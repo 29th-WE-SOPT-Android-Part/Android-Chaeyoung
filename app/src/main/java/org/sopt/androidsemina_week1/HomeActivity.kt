@@ -17,33 +17,12 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivitySecondBinding.inflate(layoutInflater)
         val view = binding.root
-/*
-        binding.followerBtn.setOnClickListener {
-            setFollowerFragment()
-        }
 
-        binding.repositBtn.setOnClickListener {
-            setRepoFragment()
-        }
-*/
         initAdapter()
         initBottomNav()
         setContentView(view)
     }
-/*
-    private fun setRepoFragment() {
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.container_main, RepositoryFragment())
-        transaction.commit()
-    }
 
-    private fun setFollowerFragment(){
-
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.container_main, followerFragment())
-        transaction.commit()
-    }
-*/
     private fun initAdapter(){
         val fragmentList = listOf(ProfileFragment(),HomeFragment(),CameraFragment())
 
@@ -63,7 +42,6 @@ class HomeActivity : AppCompatActivity() {
         binding.bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId) {
                 R.id.menu_profile -> {
-                    // 프로필일 경우
                     binding.vp2.currentItem = 0
                     return@setOnNavigationItemSelectedListener true
                 }

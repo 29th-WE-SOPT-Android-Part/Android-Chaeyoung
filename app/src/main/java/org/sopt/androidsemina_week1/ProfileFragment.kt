@@ -24,7 +24,6 @@ class ProfileFragment : Fragment() {
         binding.repositBtn.setOnClickListener {
             setRepoFragment()
         }
-
         return binding.root
     }
 
@@ -36,9 +35,7 @@ class ProfileFragment : Fragment() {
 
     private fun setFollowerFragment(){
         val transaction = childFragmentManager.beginTransaction()
-        //val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container_main, followerFragment())
         transaction.commit()
     }
-
 }

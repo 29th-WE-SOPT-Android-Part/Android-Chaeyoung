@@ -8,7 +8,6 @@ import android.view.ViewGroup
 
 class FollowingListFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
