@@ -1,0 +1,16 @@
+org/sopt/androidsemina_week1/databinding/FragmentRepositoryBinding.java
+ org.sopt.androidsemina_week1.databinding.FragmentRepositoryBinding
+org/sopt/androidsemina_week1/databinding/RepositoryListBinding.java
+ org.sopt.androidsemina_week1.databinding.RepositoryListBinding
+org/sopt/androidsemina_week1/databinding/ActivitySecondBinding.java
+ org.sopt.androidsemina_week1.databinding.ActivitySecondBinding
+org/sopt/androidsemina_week1/databinding/ActivitySigninBinding.java
+ org.sopt.androidsemina_week1.databinding.ActivitySigninBinding
+org/sopt/androidsemina_week1/BuildConfig.java
+ org.sopt.androidsemina_week1.BuildConfig
+org/sopt/androidsemina_week1/databinding/FragmentFollowerBinding.java
+ org.sopt.androidsemina_week1.databinding.FragmentFollowerBinding
+org/sopt/androidsemina_week1/databinding/FollowerListBinding.java
+ org.sopt.androidsemina_week1.databinding.FollowerListBinding
+org/sopt/androidsemina_week1/databinding/ActivityHomeBinding.java
+ org.sopt.androidsemina_week1.databinding.ActivityHomeBinding
