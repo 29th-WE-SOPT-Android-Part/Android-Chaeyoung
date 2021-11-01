@@ -4,23 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/purple_200"
     tools:context=".RepositoryFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_repository"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        tools:itemCount="3"
-        tools:listitem="@layout/repository_list"
-        app:spanCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:spanCount="3"
+        tools:itemCount="3"
+        tools:listitem="@layout/repository_list" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
