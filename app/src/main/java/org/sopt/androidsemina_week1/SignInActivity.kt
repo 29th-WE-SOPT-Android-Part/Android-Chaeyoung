@@ -18,9 +18,9 @@ class SignInActivity : AppCompatActivity() {
         val signupIntent = Intent(this, SignUpActivity::class.java)
         val homeIntent = Intent(this, HomeActivity::class.java)
 
-        binding.longin.setOnClickListener {
-            val id_str = binding.editTextId.getText().toString();
-            val pw_str = binding.editTextPw.getText().toString();
+        binding.longinBtn.setOnClickListener {
+            val id_str = binding.idEditText.getText().toString();
+            val pw_str = binding.pwEditText.getText().toString();
             if(id_str.isEmpty() || pw_str.isEmpty()){
                 Toast.makeText(this, "로그인실패", Toast.LENGTH_SHORT).show();
             }
@@ -30,7 +30,7 @@ class SignInActivity : AppCompatActivity() {
             }
         }
 
-        binding.signup.setOnClickListener {
+        binding.signupBtn.setOnClickListener {
             Toast.makeText(this, "root, message", Toast.LENGTH_SHORT);
             startActivity(signupIntent)
         }

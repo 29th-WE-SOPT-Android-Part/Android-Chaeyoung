@@ -33,6 +33,4 @@ class RepositoryAdapter : RecyclerView.Adapter<RepositoryAdapter.RepositoryViewH
             binding.tvRepoIntro.text = data.introduce
         }
     }
-
-
 }

@@ -9,8 +9,6 @@ import org.sopt.androidsemina_week1.databinding.ActivityHomeBinding
 import org.sopt.androidsemina_week1.databinding.ActivitySecondBinding
 import org.sopt.androidsemina_week1.databinding.FragmentFollowerBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
@@ -50,7 +48,6 @@ class followerFragment : Fragment() {
                 UserData("유리", "24기")
             )
         )
-
         followerAdapter.notifyDataSetChanged()
     }
 }

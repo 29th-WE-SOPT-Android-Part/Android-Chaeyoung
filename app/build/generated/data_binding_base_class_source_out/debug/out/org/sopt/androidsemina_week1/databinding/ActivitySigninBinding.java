@@ -40,11 +40,15 @@ public final class ActivitySigninBinding implements ViewBinding {
   public final Button signup;
 
   @NonNull
+  public final TextView textView14;
+
+  @NonNull
   public final TextView tvTitle;
 
   private ActivitySigninBinding(@NonNull ConstraintLayout rootView, @NonNull EditText editTextId,
       @NonNull EditText editTextPw, @NonNull TextView idText, @NonNull Button longin,
-      @NonNull TextView pwText, @NonNull Button signup, @NonNull TextView tvTitle) {
+      @NonNull TextView pwText, @NonNull Button signup, @NonNull TextView textView14,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.editTextId = editTextId;
     this.editTextPw = editTextPw;
@@ -52,6 +56,7 @@ public final class ActivitySigninBinding implements ViewBinding {
     this.longin = longin;
     this.pwText = pwText;
     this.signup = signup;
+    this.textView14 = textView14;
     this.tvTitle = tvTitle;
   }
 
@@ -118,6 +123,12 @@ public final class ActivitySigninBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView14;
+      TextView textView14 = ViewBindings.findChildViewById(rootView, id);
+      if (textView14 == null) {
+        break missingId;
+      }
+
       id = R.id.tv_title;
       TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvTitle == null) {
@@ -125,7 +136,7 @@ public final class ActivitySigninBinding implements ViewBinding {
       }
 
       return new ActivitySigninBinding((ConstraintLayout) rootView, editTextId, editTextPw, idText,
-          longin, pwText, signup, tvTitle);
+          longin, pwText, signup, textView14, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
