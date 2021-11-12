@@ -46,29 +46,31 @@
 
 ### week3
 
-- 필수 과제
-1. 로그인 화면
-![로그인](https://user-images.githubusercontent.com/62435316/141349147-1808c90b-c0e7-43ee-a7a7-b0fd36c1c70c.gif)
-2. 회원가입 화면
-![회원가입](https://user-images.githubusercontent.com/62435316/141349935-32e2b307-88ef-4b5f-bad9-1163ef3f3d1a.gif)
-3. ProfileFragment.kt!
-![프로필](https://user-images.githubusercontent.com/62435316/141350063-05f5f9f0-4d07-4d3d-9bc6-c04afadb5224.gif)
+- 필수 과제  
+
+
+|로그인|회원가입|프로필|  
+|---|---|---|  
+|<img src="https://user-images.githubusercontent.com/62435316/141349147-1808c90b-c0e7-43ee-a7a7-b0fd36c1c70c.gif"/>|<img src="https://user-images.githubusercontent.com/62435316/141349935-32e2b307-88ef-4b5f-bad9-1163ef3f3d1a.gif"/>|<img src="https://user-images.githubusercontent.com/62435316/141350063-05f5f9f0-4d07-4d3d-9bc6-c04afadb5224.gif"/>|  
 
 
 ### week4
 
-- 필수 과제
-- ![서버통신](https://user-images.githubusercontent.com/62435316/141350231-66056889-7fbf-4bd1-82a0-7e305ed96ea2.gif)
+- 필수 과제  
 
-1. POSTMAN 테스트
+![서버통신](https://user-images.githubusercontent.com/62435316/141350231-66056889-7fbf-4bd1-82a0-7e305ed96ea2.gif)
+
+1. POSTMAN 테스트  
+
   - 회원가입 완료
-![회원가입](https://user-images.githubusercontent.com/62435316/141344198-5dd79eb9-b210-46f4-8a0a-d5233dccc7db.JPG)
-  - 로그인 완료
+![회원가입](https://user-images.githubusercontent.com/62435316/141344198-5dd79eb9-b210-46f4-8a0a-d5233dccc7db.JPG)  
+
+  - 로그인 완료  
 ![로그인](https://user-images.githubusercontent.com/62435316/141344242-bc1e61a2-2144-492a-8044-798304265297.JPG)
 
 2. retrofit interface와 구현체, Requset/Response 객체에  대한 코드
 
-  - retrofit interface : SampleService.kt
+- retrofit interface : SampleService.kt  
 
   ```kotlin
   import retrofit2.Call
