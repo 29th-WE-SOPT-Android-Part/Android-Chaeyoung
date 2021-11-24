@@ -44,7 +44,93 @@
 |<img src="https://user-images.githubusercontent.com/62435316/138474041-6fefb820-4aed-4e88-8159-008303602d4f.jpg"  width="50%" height="50%"/>|- RepositoryRecyclerView : GridLayout으로 뷰|
 
 
+### week3
+
+- 필수 과제  
 
 
+|로그인|회원가입|프로필|  
+|---|---|---|  
+|<img src="https://user-images.githubusercontent.com/62435316/141349147-1808c90b-c0e7-43ee-a7a7-b0fd36c1c70c.gif"/>|<img src="https://user-images.githubusercontent.com/62435316/141349935-32e2b307-88ef-4b5f-bad9-1163ef3f3d1a.gif"/>|<img src="https://user-images.githubusercontent.com/62435316/141350063-05f5f9f0-4d07-4d3d-9bc6-c04afadb5224.gif"/>|  
 
 
+### week4
+
+- 필수 과제  
+
+![서버통신](https://user-images.githubusercontent.com/62435316/141350231-66056889-7fbf-4bd1-82a0-7e305ed96ea2.gif)
+
+1. POSTMAN 테스트  
+
+  - 회원가입 완료
+![회원가입](https://user-images.githubusercontent.com/62435316/141344198-5dd79eb9-b210-46f4-8a0a-d5233dccc7db.JPG)  
+
+  - 로그인 완료  
+![로그인](https://user-images.githubusercontent.com/62435316/141344242-bc1e61a2-2144-492a-8044-798304265297.JPG)
+
+2. retrofit interface와 구현체, Requset/Response 객체에  대한 코드
+
+- retrofit interface : SampleService.kt  
+
+  ```kotlin
+  import retrofit2.Call
+  import retrofit2.http.Body
+  import retrofit2.http.Headers
+  import retrofit2.http.POST
+
+  interface SampleService {
+      @Headers("Content-Type:application/json")
+      @POST("user/login")
+      fun postLogin(
+          @Body body : RequestLoginData
+      ) : Call<ResponseLoginData>
+  }
+  ```
+  
+  - retrofit 구현체 : ServiceCreator.kr
+
+  ```kotlin
+  import retrofit2.Retrofit
+  import retrofit2.converter.gson.GsonConverterFactory
+
+  object ServiceCreator {
+    private const val BASE_URL = "https://asia-northeast3-we-sopt-29.cloudfunctions.net/api/"
+
+    private val retrofit : Retrofit = Retrofit
+        .Builder()
+        .baseUrl(BASE_URL)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+
+    val sampleService: SampleService = retrofit.create(SampleService::class.java)
+  }
+  ```
+  
+  - Request : RequestLoginData.kt
+
+  ```Kotlin
+  import com.google.gson.annotations.SerializedName
+
+  data class RequestLoginData(
+      @SerializedName("email")
+      val email : String,
+      val password : String
+  )
+  ```
+  
+  - Response : ResponseLoginData.kr
+  
+  ```Kotlin
+  data class ResponseLoginData(
+    val status : Int,
+    val success : Boolean,
+    val message : String,
+    val data : Data
+  ) {
+    data class Data(
+        val id : Int,
+        val name : String,
+        val email : String
+    )
+  }
+  ```
