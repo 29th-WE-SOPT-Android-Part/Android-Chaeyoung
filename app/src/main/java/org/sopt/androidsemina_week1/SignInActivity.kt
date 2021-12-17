@@ -40,7 +40,6 @@ class SignInActivity : AppCompatActivity() {
             binding.pwEditText.text.toString()
         )
         val call : Call<ResponseLoginData> = ServiceCreator.sampleService.postLogin(requestLoginData)
-
         call.enqueue(object : Callback<ResponseLoginData>{
             override fun onResponse(
                 call: Call<ResponseLoginData>,
