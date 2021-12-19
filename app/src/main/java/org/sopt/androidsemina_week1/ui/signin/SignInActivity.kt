@@ -10,6 +10,7 @@ import org.sopt.androidsemina_week1.ui.home.ServiceCreator
 import org.sopt.androidsemina_week1.data.RequestLoginData
 import org.sopt.androidsemina_week1.data.ResponseLoginData
 import org.sopt.androidsemina_week1.databinding.ActivitySigninBinding
+import org.sopt.androidsemina_week1.ui.home.shortToast
 import org.sopt.androidsemina_week1.ui.signup.SignUpActivity
 import retrofit2.Call
 import retrofit2.Callback
@@ -28,6 +29,8 @@ class SignInActivity : AppCompatActivity() {
 
         binding.longinBtn.setOnClickListener {
             initNetwork()
+            initAutoLogin()
+            checkAutoLogin()
         }
 
         binding.signupBtn.setOnClickListener {
@@ -36,6 +39,18 @@ class SignInActivity : AppCompatActivity() {
         }
 
         setContentView(binding.root)
+    }
+
+    private fun checkAutoLogin() {
+        shortToast("자동로그인 되었습니다.")
+        startActivity(Intent(this, HomeActivity::class.java))
+        finish()
+    }
+
+    private fun initAutoLogin() {
+        binding.clAutoLogin.setOnClickListener {
+            binding.ivCheck.isSelected = !binding.ivCheck.isSelected
+        }
     }
 
     private fun initNetwork() {
