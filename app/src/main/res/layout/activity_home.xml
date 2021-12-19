@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".ui.home.HomeActivity">
 
     <TextView
         android:id="@+id/id_tv"
@@ -27,7 +27,7 @@
         android:minHeight="48dp"
         android:paddingStart="16dp"
         android:paddingTop="13dp"
-        android:paddingEnd="155dp"
+        android:paddingEnd="100dp"
         android:paddingBottom="13dp"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,7 +69,7 @@
         android:minHeight="48dp"
         android:paddingLeft="16dp"
         android:paddingTop="13dp"
-        android:paddingEnd="155dp"
+        android:paddingEnd="100dp"
         android:paddingBottom="13dp"
         android:text=""
         app:layout_constraintStart_toStartOf="@+id/name_tv"
@@ -86,7 +86,7 @@
         android:minHeight="48dp"
         android:paddingStart="16dp"
         android:paddingTop="13dp"
-        android:paddingEnd="155dp"
+        android:paddingEnd="100dp"
         android:paddingBottom="13dp"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"

@@ -1,4 +1,4 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.home
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

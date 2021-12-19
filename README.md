@@ -134,3 +134,31 @@
     )
   }
   ```
+  
+  ### week4
+
+- 필수 과제  
+- 
+1. 온보딩 화면
+
+|화면1|화면2|화면3|  
+|---|---|---|  
+|<img src="https://user-images.githubusercontent.com/62435316/146689906-c5d17a5d-07a3-4384-8843-ff4e564e29e3.png"/>|<img src="https://user-images.githubusercontent.com/62435316/146689915-f47fc37c-5654-4936-8027-a28b1a7cbf44.png"/>|<img src="https://user-images.githubusercontent.com/62435316/146689924-415e4410-f11f-467b-8699-7295dbb2b2b2.png"/>|  
+
+
+2. 자동로그인
+
+3. 패키징
+
+![image](https://user-images.githubusercontent.com/62435316/146689974-c812a4a1-16b0-4c3e-bdf2-ae423729b09e.png)
+
+패키징 구조
+
+data : 서버 통신의 request, response data 파일들
+di : -
+ui : ui와 관련된 파일들. 화면에 따라 다른 파일에 넣었다.
+  - home
+  - onboard
+  - signin
+  - signup
+util

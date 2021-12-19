@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#34BE82"
-    tools:context=".FollowingListFragment">
+    tools:context=".ui.home.FollowingListFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

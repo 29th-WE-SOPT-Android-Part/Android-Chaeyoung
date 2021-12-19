@@ -1,12 +1,10 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.home
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.viewpager2.widget.ViewPager2
+import org.sopt.androidsemina_week1.R
 import org.sopt.androidsemina_week1.databinding.ActivitySecondBinding
-import org.sopt.androidsemina_week1.databinding.FragmentFollowerBinding
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var viewPagerAdapter: ViewPagerAdapter
@@ -24,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun initAdapter(){
-        val fragmentList = listOf(ProfileFragment(),HomeFragment(),CameraFragment())
+        val fragmentList = listOf(ProfileFragment(), HomeFragment(), CameraFragment())
 
         viewPagerAdapter = ViewPagerAdapter(this)
         viewPagerAdapter.fragments.addAll(fragmentList)

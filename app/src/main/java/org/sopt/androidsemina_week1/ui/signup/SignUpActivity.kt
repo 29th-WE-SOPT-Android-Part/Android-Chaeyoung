@@ -1,9 +1,10 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.signup
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import org.sopt.androidsemina_week1.ui.home.HomeActivity
 import org.sopt.androidsemina_week1.databinding.ActivityHomeBinding
 
 class SignUpActivity : AppCompatActivity() {
