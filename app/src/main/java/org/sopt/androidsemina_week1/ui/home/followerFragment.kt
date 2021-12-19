@@ -1,12 +1,11 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import org.sopt.androidsemina_week1.databinding.ActivityHomeBinding
-import org.sopt.androidsemina_week1.databinding.ActivitySecondBinding
+import org.sopt.androidsemina_week1.data.UserData
 import org.sopt.androidsemina_week1.databinding.FragmentFollowerBinding
 
 private const val ARG_PARAM1 = "param1"

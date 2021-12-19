@@ -1,4 +1,4 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.home
 
 import android.content.Context
 import android.widget.Toast

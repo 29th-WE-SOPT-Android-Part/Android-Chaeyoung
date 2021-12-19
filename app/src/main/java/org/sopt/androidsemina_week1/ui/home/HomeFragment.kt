@@ -1,4 +1,4 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.tabs.TabLayoutMediator
 import org.sopt.androidsemina_week1.databinding.FragmentHomeBinding
-import org.sopt.androidsemina_week1.databinding.FragmentProfileBinding
 
 class HomeFragment : Fragment() {
     private lateinit var tabViewPagerAdapter : TabViewPagerAdapter

@@ -1,4 +1,4 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.data
 
 import com.google.gson.annotations.SerializedName
 

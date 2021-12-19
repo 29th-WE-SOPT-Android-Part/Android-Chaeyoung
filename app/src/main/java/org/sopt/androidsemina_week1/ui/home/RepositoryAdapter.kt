@@ -1,9 +1,9 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import org.sopt.androidsemina_week1.databinding.FollowerListBinding
+import org.sopt.androidsemina_week1.data.RepoData
 import org.sopt.androidsemina_week1.databinding.RepositoryListBinding
 
 class RepositoryAdapter : RecyclerView.Adapter<RepositoryAdapter.RepositoryViewHolder>() {

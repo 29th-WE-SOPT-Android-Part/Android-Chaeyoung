@@ -1,5 +1,7 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.home
 
+import org.sopt.androidsemina_week1.data.RequestLoginData
+import org.sopt.androidsemina_week1.data.ResponseLoginData
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.Headers

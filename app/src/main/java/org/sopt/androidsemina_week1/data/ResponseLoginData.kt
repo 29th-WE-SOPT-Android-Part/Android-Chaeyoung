@@ -1,4 +1,4 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.data
 
 data class ResponseLoginData(
     val status : Int,

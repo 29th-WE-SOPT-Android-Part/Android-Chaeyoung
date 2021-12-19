@@ -1,11 +1,11 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import org.sopt.androidsemina_week1.databinding.FragmentFollowerBinding
+import org.sopt.androidsemina_week1.data.RepoData
 import org.sopt.androidsemina_week1.databinding.FragmentRepositoryBinding
 
 private const val ARG_PARAM1 = "param1"

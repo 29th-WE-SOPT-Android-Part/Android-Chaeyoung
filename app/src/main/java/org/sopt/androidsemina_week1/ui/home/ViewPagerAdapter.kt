@@ -1,4 +1,4 @@
-package org.sopt.androidsemina_week1
+package org.sopt.androidsemina_week1.ui.home
 
 import android.provider.ContactsContract
 import androidx.fragment.app.Fragment
